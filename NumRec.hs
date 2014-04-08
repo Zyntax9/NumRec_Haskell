@@ -1,18 +1,20 @@
 import System.Directory
 import Data.Char
 import Data.List
+import Codec.BMP
 
 learnFromFile :: String -> IO ()
-learnFromFile file = return 3
+learnFromFile file = return ()
 	where
-		isBitmap path =
+		isBitMap :: String -> IO Bool
+		isBitMap path =
 			doesFileExist path >>=
-			\exist -> exist && ".bmp" `isSuffixOf` path
+			\exist -> return $ exist && ".bmp" `isSuffixOf` path
 	
 learnAllFromDirectory :: String -> IO ()
 learnAllFromDirectory dir = 
 	getDirectoryContents dir >>=
-	\contents -> 
+	\contents -> return ()
 	where
 		fullPath file = dir ++ "\\" ++ file
 
