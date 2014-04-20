@@ -1,0 +1,22 @@
+
+*************** INFO ****************
+          NumRec.hs V 1.0
+
+This program was made as a handin and
+project for programming C class by
+Steffen Holst Larsen at Grenaa HTX in
+Denmark.
+
+NumRec was made to prove the concept
+of simple machine learning. The pur-
+pose of the application is to learn
+from bitmap (windows V3 format)
+files and to, from that information,
+be able to make valid guesses to
+which number a given bitmap represe-
+nts.
+
+This application was testet with
+bitmaps of the size 25x40.
+
+************************************
