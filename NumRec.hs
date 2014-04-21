@@ -275,7 +275,7 @@ illustration =
 		-- Returns a color value for the RGB
 		rgbVal val high 
 			| (read val :: Int) <= 0	= chr 255
-			| otherwise					= chr (130 - (div 130 (high * (read val :: Int))))
+			| otherwise					= chr (130 - ((div 130 high) * (read val :: Int)))
 		-- Converts list into ByteString
 		totalBS dat =
 			CH.pack dat
